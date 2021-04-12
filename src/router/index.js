@@ -10,7 +10,7 @@ import StockList from '@/components/StockList'
 import StockCreate from '@/components/StockCreate'
 import FundList from '@/components/FundList'
 import FundCreate from '@/components/FundCreate'
-import SignUp from '@/components/SignUp'
+
 
 
 
@@ -108,11 +108,7 @@ export default new Router({
       name: 'FundUpdate',
       component: FundCreate
     },
-    {
-      path: '/sign-up',
-      name: 'SignUp',
-      component: SignUp
-    },
+    
     {
       path: '/auth',
       name: 'Auth',
