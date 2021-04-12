@@ -13,9 +13,7 @@
           rounded
           dark
         >{{ item.title }}</v-btn>
-        <v-btn flat dark text rounded v-if="!authenticated"
-               @click="signUp">Sign Up
-        </v-btn>
+        
         <v-btn flat dark text rounded v-if="!authenticated"
                @click="login">Log in
         </v-btn>
@@ -40,8 +38,7 @@
                           :key="item.title"
                           :to="item.url"
             >{{ item.title }}</v-list-item>
-            <v-list-item v-if="!authenticated"
-                         @click="signUp">Sign Up</v-list-item>
+            
             <v-list-item v-if="!authenticated"
                          @click="login">Log in</v-list-item>
             <v-list-item v-if="authenticated"
@@ -102,16 +99,17 @@ export default {
     login() {
       router.push("/auth");
     },
-    signUp() {
-      router.push("/sign-up");
-    },
+   
   }
 };
 
 </script>
+<<<<<<< HEAD
 <style scoped>
 .bg1{
   background-image: url('https://pixnio.com/free-images/wallpapers/sunrise-desktop-wallpaper.jpg');
   background-size: cover;
   }
 </style>
+=======
+>>>>>>> e5b21fcc6979260314209bf4bcfa95deedfa7fd6

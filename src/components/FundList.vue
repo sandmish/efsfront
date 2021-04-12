@@ -135,7 +135,6 @@ export default {
       {text: 'Category', sortable: false, align: 'left',},
       {text: 'Symbol', sortable: false, align: 'left',},
       {text: 'Description', sortable: false, align: 'left',},
-      {text: 'Quantity', sortable: false, align: 'left',},
       {text: 'Acquired Value', sortable: false, align: 'left',},
       {text: 'Acquired Date', sortable: false, align: 'left',},
       {text: 'Recent Value', sortable: false, align: 'left',},
