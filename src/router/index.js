@@ -8,6 +8,10 @@ import InvestmentList from '@/components/InvestmentList'
 import InvestmentCreate from '@/components/InvestmentCreate'
 import StockList from '@/components/StockList'
 import StockCreate from '@/components/StockCreate'
+import FundList from '@/components/FundList'
+import FundCreate from '@/components/FundCreate'
+import SignUp from '@/components/SignUp'
+
 
 
 Vue.use(Router)
@@ -82,6 +86,32 @@ export default new Router({
       path: '/stock-create/:pk',
       name: 'StockUpdate',
       component: StockCreate
+    },
+    
+    {
+      path: '/fund-list',
+      name: 'FundList',
+      component: FundList
+    },
+    {
+      path: '/fund-list/:msg',
+      name: 'FundUpdatedList',
+      component: FundList
+    },
+    {
+      path: '/fund-create',
+      name: 'FundCreate',
+      component: FundCreate
+    },
+    {
+      path: '/fund-create/:pk',
+      name: 'FundUpdate',
+      component: FundCreate
+    },
+    {
+      path: '/sign-up',
+      name: 'SignUp',
+      component: SignUp
     },
     {
       path: '/auth',

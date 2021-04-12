@@ -15,15 +15,15 @@
       </v-row>
     </v-container>
 
-    <v-container fluid>
+    <v-container fluid grid-list-md>
       <v-row
         align="center"
         justify="center"
       >
         <v-col 
-          cols="12"
-            sm="10"
-            md="10"
+          cols="5"
+            sm="5"
+           
         >
           <v-card class="elevation-2">
             <v-container
@@ -34,7 +34,7 @@
                 <v-col>
                   <v-card>
                     <v-img
-                      :src="require('@/assets/images/customer.jpg')" height="200px">
+                      :src="require('@/assets/images/customer.jpg')" height="100px">
                     </v-img>
                     <v-card-text>
                       <div class="blue--text text-h6">
@@ -49,7 +49,7 @@
                 <v-col>
                   <v-card>
                      <v-img
-                      :src="require('@/assets/images/nonstock.jpg')" height="200px">
+                      :src="require('@/assets/images/nonstock.jpg')" height="100px">
                     </v-img>
                     <v-card-text>
                       <div class="blue--text text-h6">
@@ -64,7 +64,7 @@
                 <v-col>
                   <v-card>
                     <v-img
-                      :src="require('@/assets/images/stocks.jpg')" height="200px">
+                      :src="require('@/assets/images/stocks.jpg')" height="100px">
                     </v-img>
                     <v-card-text>
                       <div class="blue--text text-h6">
@@ -76,8 +76,23 @@
                     </v-card-actions>
                   </v-card> 
                 </v-col>
+                <v-col>
+                  <v-card>
+                    <v-img
+                      :src="require('@/assets/images/fund.jpg')" height="100px">
+                    </v-img>
+                    <v-card-text>
+                      <div class="blue--text text-h6">
+                        Funds
+                      </div>  
+                    </v-card-text>
+                    <v-card-actions>
+                      <v-btn flat color="orange" @click="viewFunds">View Details</v-btn>
+                    </v-card-actions>
+                  </v-card> 
+                </v-col>
               </v-row>
-            </v-container>
+              </v-container>
           </v-card>
         </v-col>
       </v-row>
@@ -105,9 +120,11 @@
     },
 
       viewStocks() {
-        router.push('/stock_list');
+        router.push('/stock-list');
     },
-    
+    viewFunds() {
+        router.push('/fund-list');
+      },
 
       getUser() {
         if (localStorage.getItem("isAuthenticates")
