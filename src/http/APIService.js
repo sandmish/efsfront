@@ -159,6 +159,7 @@ deleteFund(fund_Pk){
  const headers = {Authorization: `jwt ${jwtToken}`};
  return axios.delete(url, {headers: headers});
 }
+
   authenticateLogin(credentials) {
     const url = `${API_URL}/auth/`;
     return axios.post(url, credentials);

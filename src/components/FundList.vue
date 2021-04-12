@@ -4,12 +4,12 @@
     <v-container fluid>
       <v-row align="center" justify="center">
         <v-col cols="12" align="center" justify="center">
-          <blockquote>
-            Welcome {{validUserName}}!
+          <blockquote><h1>
+            Welcome {{validUserName}}!</h1>
             <footer>
-              <small>
+              <h3>
                 <em>&mdash;Eagle Financial Services, your Midwest Financial Services Partner.</em>
-              </small>
+              </h3>
             </footer>
           </blockquote>
         </v-col>

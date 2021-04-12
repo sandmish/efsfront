@@ -145,7 +145,7 @@ export default {
     }
   },
   methods: {
-    signUp() {
+    SignUp() {
       apiService.signUp(this.user).then(response => {
         if (response.status === 201) {
           this.stock = response.data;

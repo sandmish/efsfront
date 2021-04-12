@@ -14,6 +14,7 @@
           dark
         >{{ item.title }}</v-btn>
         
+        
         <v-btn flat dark text rounded v-if="!authenticated"
                @click="login">Log in
         </v-btn>
