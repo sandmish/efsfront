@@ -160,10 +160,10 @@ deleteFund(fund_Pk){
  return axios.delete(url, {headers: headers});
 }
 
-addNewUserasadvisor(user){
-  const url = `${API_URL}/api/signup/`;
+signUp(user){
+  const url = `${API_URL}/api/users/`;
   return axios.post(url, user);
-  }
+}
 
   authenticateLogin(credentials) {
     const url = `${API_URL}/auth/`;
