@@ -49,7 +49,7 @@
             >
                     <template v-slot:item="props">
                       <tr>
-                        <td align="left">{{ props.item.customer }}</td>
+                        <td align="left">{{ props.item.cust_number }}</td>
                         <td nowrap="true" align="left">{{ props.item.symbol }}</td>
                         <td nowrap="true" align="left">{{ props.item.name }}</td>
                         <td nowrap="true" align="left">{{ props.item.shares }}</td>
@@ -128,7 +128,7 @@
       showMsg: '',
       isMobile: false,
       headers: [
-        {text: 'Customer Number', sortable: false, align: 'left',},
+        {text: 'Cust_Number', sortable: false, align: 'left',},
         {text: 'Symbol', sortable: false, align: 'left',},
         {text: 'Name', sortable: false, align: 'left',},
         {text: 'Shares', sortable: false, align: 'left',},

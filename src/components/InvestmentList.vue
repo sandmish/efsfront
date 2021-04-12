@@ -49,7 +49,7 @@
             >
                     <template v-slot:item="props">
                       <tr>
-                        <td align="left">{{ props.item.customer }}</td>
+                        <td align="left">{{ props.item.cust_number }}</td>
                         <td align="left">{{ props.item.category }}</td>
                         <td nowrap="true" align="left">{{ props.item.description }}</td>
                         <td nowrap="true" align="left">{{ props.item.acquired_value }}</td>
