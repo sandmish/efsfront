@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app class = "bg1">
     <v-app-bar app color="blue">
       <v-toolbar-title >Eagle Finance Services</v-toolbar-title>
       <v-spacer></v-spacer>
@@ -109,3 +109,9 @@ export default {
 };
 
 </script>
+<style scoped>
+.bg1{
+  background-image: url('https://pixnio.com/free-images/wallpapers/sunrise-desktop-wallpaper.jpg');
+  background-size: cover;
+  }
+</style>

@@ -20,10 +20,10 @@
         align="center"
         justify="center"
       >
-        <v-col 
-          cols="5"
-            sm="5"
-           
+        <v-col
+          cols="12"
+          sm="10"
+          md="10"
         >
           <v-card class="elevation-2">
             <v-container
@@ -34,7 +34,7 @@
                 <v-col>
                   <v-card>
                     <v-img
-                      :src="require('@/assets/images/customer.jpg')" height="100px">
+                      :src="require('@/assets/images/customer.jpg')" height="200px">
                     </v-img>
                     <v-card-text>
                       <div class="blue--text text-h6">
@@ -49,7 +49,7 @@
                 <v-col>
                   <v-card>
                      <v-img
-                      :src="require('@/assets/images/nonstock.jpg')" height="100px">
+                      :src="require('@/assets/images/nonstock.jpg')" height="200px">
                     </v-img>
                     <v-card-text>
                       <div class="blue--text text-h6">
@@ -64,7 +64,7 @@
                 <v-col>
                   <v-card>
                     <v-img
-                      :src="require('@/assets/images/stocks.jpg')" height="100px">
+                      :src="require('@/assets/images/stocks.jpg')" height="200px">
                     </v-img>
                     <v-card-text>
                       <div class="blue--text text-h6">
@@ -79,7 +79,7 @@
                 <v-col>
                   <v-card>
                     <v-img
-                      :src="require('@/assets/images/fund.jpg')" height="100px">
+                      :src="require('@/assets/images/fund.jpeg')" height="200px">
                     </v-img>
                     <v-card-text>
                       <div class="blue--text text-h6">
